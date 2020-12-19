@@ -46,7 +46,7 @@ def black_jack():
             if player_total == computer_total:
                 print("It's a draw!")
             else:
-                print("You win with a BlackJack!")
+                print("You win!")
             black_jack()
         # Loop to continue asking player if they want another card if they have not busted.
         draw_again = True
