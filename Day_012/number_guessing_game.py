@@ -25,8 +25,7 @@ def guess_number():
     # Until the user wins or runs out of guesses they will be asked to guess a number.
     game_over = False
     while not game_over:
-        print(
-            f"You have {guesses_remaining} attempts remaining to guess the number.")
+        print(f"You have {guesses_remaining} attempts remaining to guess the number.")
         player_guess = int(input("Please guess a number: "))
         guesses_remaining -= 1
         if guesses_remaining == 0:
