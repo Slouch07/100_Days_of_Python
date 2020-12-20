@@ -6,7 +6,7 @@ import replit
 def guess_number():
     def generate_number():
         """Selects a random number between 1 and 100"""
-        number = random.randint(1, 101)
+        number = random.randint(1, 100)
         return number
     # Prints ASCII art to consol
     print(art.logo)
