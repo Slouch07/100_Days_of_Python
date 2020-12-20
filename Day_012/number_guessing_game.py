@@ -1,4 +1,5 @@
 import art, random, replit
+
 def guess_number():
   def generate_number():
     """Selects a random number between 1 and 100"""
