@@ -85,4 +85,5 @@ while not game_over:
         # End the game.
         game_over = True
         replit.clear()
+        print(art.logo)
         print(f"Sorry, that's wrong. Final score: {score}.")
