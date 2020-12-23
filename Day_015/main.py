@@ -89,7 +89,8 @@ while powered_on:
     sufficient_resources = False
     # Loop to check user's choice and levels of required resources.
     while not sufficient_resources:
-        choice = input(" What would you like? (espresso: $1.50/latte: $2.50/cappuccino $3.00): ").lower()
+        choice = input(
+            " What would you like? (espresso: $1.50/latte: $2.50/cappuccino $3.00): ").lower()
         if choice == 'off':
             # Breaks out of inner loop if user selects "off"
             break
@@ -116,7 +117,8 @@ while powered_on:
         pennies = int(input("how many pennies:? "))
 
         # Calculate the value of the inserted coins.
-        total_value = float((quarters * .25) + (dimes * .10) + (nickels * 0.05) + (pennies * .01))
+        total_value = float((quarters * .25) + (dimes * .10) +
+                            (nickels * 0.05) + (pennies * .01))
 
         # Variable to store any over payment.
         change = 0.0
