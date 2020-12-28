@@ -6,8 +6,8 @@ question_bank = []
 
 # For each new question, grab the question and answer from the data and place it in the new question list.
 for q in question_data:
-    q_text = q["text"]
-    q_answer = q["answer"]
+    q_text = q["question"]
+    q_answer = q["correct_answer"]
     new_q = Question(q_text, q_answer)
     question_bank.append(new_q)
 
