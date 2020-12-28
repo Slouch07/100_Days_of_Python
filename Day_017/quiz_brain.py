@@ -1,10 +1,12 @@
 class QuizBrain:
 
+    # Constructor method.
     def __init__(self, q_list):
         self.q_list = q_list
         self.q_number = 0
         self.score = 0
 
+    #  A method that loops until there are no questions left.
     def still_has_questions(self):
         list_length = len(self.q_list)
         if self.q_number < list_length:
@@ -12,12 +14,14 @@ class QuizBrain:
         else:
             return False
 
+    # A method grab the next question.
     def next_question(self):
         current_q = self.q_list[self.q_number]
         self.q_number += 1
         user_answer = input(f"Q.{self.q_number}: {current_q.text} (True/False)?: ")
         self.check_answer(user_answer, current_q.answer)
 
+    # A method to keep score and check if the answer was correct.
     def check_answer(self, user_answer, correct_answer):
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
